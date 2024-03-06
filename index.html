@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3school</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="#" class="menu-btn">
+                <div class="w3school-logo">
+                    <img src="./assets/logo.png">
+                </div>
+            </a>
+            <div href="#Tutorial" class="menu-btn media-btn_desktop" id="Tutorial-btn">
+                Tutorials
+                <i class="fa-solid fa-caret-down"></i>
+           </div>
+            <div href="#refrence" class="menu-btn" id="references-btn">
+                 Refrence
+                 <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div href="#exercises" class="menu-btn" id="exercises-btn">
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+           </div>
+           <div href="#video" class="menu-btn" id="video-btn">
+                Videos
+              <!-- <i class="fa-solid fa-caret-down"></i> -->
+            </div>
+            <!-- mobile view menu -->
+            <div class="menu-btn" id="Menu-btn-Mobile">
+                Menu
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="right">
+            <div class="toggleLightDark btn">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+            <div class="toggleTranslate btn">
+                <i class="fa-solid fa-earth-asia"></i>
+            </div>
+            <div class="toggleSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="#upgrade" class="btn btn-link bg-black" id="upgrade-btn" > 
+                Upgrade
+           </a>
+           <a href="#getCertified" class="btn btn-link bg-pink" id="getCertified" > 
+                Get Certified
+            </a>
+            <a href="#freeWebsite" class="btn btn-link bg-yellow" id="freeWebsite" > 
+                Free Website
+            </a>
+            <a href="#login" class="btn btn-link bg-green" id="login-btn"> 
+                Log in
+            </a>
+        </div>
+    </header>
+    <div class="mobile-menu-container" id="mobile-menu-nav">
+        <div class="mobile-menu-close-btn">
+            <button id="mobile-Nav-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+            <a href="#Tutorial" class="menu-btn-mobile_menu " >
+                Tutorials
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#refrence" class="menu-btn-mobile_menu" >
+                 Refrence
+                 <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#exercises" class="menu-btn-mobile_menu" >
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <a href="#getCertified" class="menu-btn-mobile_menu" >
+                Get Certified
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+            </a>
+            <a href="#upgrade" class="menu-btn-mobile_menu" >
+                Upgrade
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+            </a>
+            <a href="#spaces" class="menu-btn-mobile_menu" >
+                Spaces
+                <!-- <i class="fa-solid fa-caret-down"></i> -->
+            </a>
+           <a href="#video" class="menu-btn-mobile_menu" >
+                Videos
+              <!-- <i class="fa-solid fa-caret-down"></i> -->
+           </a>
+           <a href="#shop" class="menu-btn-mobile_menu" >
+            Shop
+            <!-- <i class="fa-solid fa-caret-down"></i> -->
+        </a>
+        </ul>
+    </div>
+
+    <div class="nested-navigation-container nested_navigation_hidden" id="nested-navigation-container_id">
+        <div class="nested-navigation_container_close-btn">
+            <button><i class="fa-solid fa-xmark menu-btn" id="xmark_nested_navigation_container"></i></button>
+        </div>
+
+        <div class="nested-navigation-container_content">
+            <h1>Tutorials</h1>
+            <div class="nested-navigation-container_content_data">
+                <div class="nested-navigation_item">
+                    <h2>HTML and CSS</h2>
+                    <a href="">Learn HTML</a>
+                    <a href="">Learn CSS</a>
+                    <a href="">Learn RWD</a>
+                    <!-- <a href="">href</a> -->
+                </div>
+                <div class="nested-navigation_item">
+                    <h2>javaScript</h2>
+                    <a href="">Learn javaScript</a>
+                    <a href="">Learn jQuery</a>
+                    <a href="">Learn React</a>
+                </div>
+                <div class="nested-navigation_item">
+                    <h2>Server Side</h2>
+                    <a href="">Learn SQL</a>
+                    <a href="">Learn mySQL</a>
+                    <a href="">Learn PHP</a>
+                </div>
+                <div class="nested-navigation_item">
+                    <h2>Data Analytics</h2>
+                    <a href="">Learn AI</a>
+                    <a href="">Learn Machine Learning</a>
+                    <a href="">Learn Data Science</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

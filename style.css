@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    height: 75px;
+    background-color: white;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.bg-black {
+    background-color: #323131;
+    color: white;
+    text-decoration: none;
+}
+
+.bg-pink {
+    background-color: pink;
+    color: black;
+    text-decoration: none;
+}
+
+.bg-yellow {
+    background-color: yellow;
+    color:#000;
+    text-decoration: none;
+}
+
+.bg-green {
+    background-color: #20c997;
+    color: white;
+    text-decoration: none;
+}
+
+
+.w3school-logo {
+    width: 55px;
+    padding: 2px 8px;
+    
+}
+
+.w3school-logo img {
+    width: 100%;
+    /* margin-right: 10px; */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.left .menu-btn{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 550; 
+    color: #000;
+    text-decoration: none;
+    justify-items: center;
+    /* width: 100%; */
+    cursor: pointer;
+}
+
+.left .menu-btn:hover{
+    background-color: #20c997;
+    color: white; 
+    cursor: pointer;
+}
+
+.left .menu-btn:first-child:hover {
+    background-color: transparent;
+}
+
+.left .menu-btn:first-child {
+    padding: 0;
+    margin-right: 10px;
+}
+
+/* #video-btn {
+    display: flex;
+    align-items: center;
+    padding-top: 27px;
+} */
+
+.fa-solid {
+    padding: 0px 3px;
+}
+
+/* header right */
+
+.toggleLightDark {
+    transform: rotate(180deg);
+    
+}
+
+.toggleLightDark:hover {
+    color: #20c997;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    /* overflow: hidden; */
+    /* margin-right: 30px; */
+    gap: 18px;
+} 
+
+.right a{
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 60px;
+    padding: 10px 18px;
+}
+
+.toggleTranslate:hover {
+    color: #20c997;
+}
+
+/* .right a:last-child {
+    padding: 10px 45px;
+} */ /* this is removed and placed in responsive section */
+
+.right a:hover {
+    opacity: 0.8;
+}
+
+/* responsive */
+
+#upgrade-btn {
+    display: none;
+}
+
+#getCertified {
+    display: none;
+}
+
+#video-btn {
+    display: none;
+}
+
+#freeWebsite {
+    display: none;
+}
+
+#Tutorial-btn,
+    #references-btn,
+    #exercises-btn{
+        display: none;
+    }
+
+#Menu-btn-Mobile {
+    display: flex;
+}
+
+.toggleLightDark{
+    display: none;
+}
+
+.toggleTranslate,
+    .toggleSearch{
+        display: none;
+    }
+
+@media all and (min-width: 1305px){
+    #upgrade-btn{
+        display: block;
+    }
+}
+
+@media all and (min-width: 1200px){
+    #getCertified{
+        display: block;
+    }
+
+    #video-btn{
+        display: flex;
+    }
+}
+
+@media all and (min-width:950px){
+    #freeWebsite {
+        display: block;
+    }
+}
+
+@media all and (min-width:850px){
+    #Tutorial-btn,
+    #references-btn,
+    #exercises-btn{
+        display: flex;
+    }
+
+    #Menu-btn-Mobile {
+        display: none;
+    }
+}
+
+@media all and (min-width:600px){
+    .toggleLightDark{
+        display: block;
+    }
+}
+
+@media all and (min-width:468px){
+    .right a:last-child {
+        padding: 10px 45px;
+    }
+}
+
+@media all and (min-width:400px){
+    .toggleTranslate,
+    .toggleSearch{
+        display: block;
+    }
+}
+
+
+/* mobile-menu-container */ 
+
+.mobile-menu-container {
+    /* height: 600px; */
+    background-color: aliceblue;
+    display: block;
+    position: relative;
+    z-index: 50;
+    display: none; /* this function is handeled in js */
+    /* background-color: red; */
+}
+
+.mobile-menu-container ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;  
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.mobile-menu-container ul a{
+    padding-bottom: 20px;
+}
+
+.menu-btn-mobile_menu{
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.mobile-menu-close-btn{  
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.mobile-menu-close-btn button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+}
+
+.mobile-menu-close-btn i{
+    font-size: 22px;
+}
+
+.mobile-menu-nav-hidden{
+    display: flex;
+    flex-direction: column;
+} 
+
+@media all and (min-width:850px){
+    /* .mobile-menu-container{
+        display: none;
+    } */
+
+    .mobile-menu-nav-hidden{
+        display: none;
+    }
+}
+
+/* nested-navigation-container */
+
+.nested-navigation-container{
+    background-color: #323131;
+    color: white;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.nested-navigation_container_close-btn{
+    position: absolute;
+    right: 0;
+}
+
+.nested-navigation_container_close-btn button {
+    font-size: 30px;
+    padding: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nested-navigation_container_close-btn button:hover {
+    background-color: white;
+    color: black;
+}
+
+.nested-navigation-container_content {
+    width: 80%;
+    /* background-color: #20c997; */
+    margin: auto;
+    padding-top: 50px;
+}
+
+.nested-navigation-container_content h1 {
+    margin: 0;
+    color: rgb(242, 242, 159);
+}
+
+.nested-navigation-container_content_data {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,1fr)); 
+}
+
+.nested-navigation_item {
+    margin-right: 20px;
+}
+
+.nested-navigation_item h2 {
+    color: rgb(242, 242, 159);
+    margin-top: 30px;
+}
+
+.nested-navigation_item a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 550;
+    padding: 5px;
+}
+
+.nested-navigation_item a:hover {
+    background-color: navajowhite;
+    color: #000;
+    
+}
+
+.nested_navigation_hidden {
+    display: none;
+}
+
+
+
+/* text white utility */
